@@ -41,3 +41,4 @@ Html5 新的属性(Chrome显示)
    </form>
    <input type="text" form="form1"/>
    form属性值可以是多个表单的id，用空格将各个表单的id分开
+4：list属性：和datalist搭配使用
