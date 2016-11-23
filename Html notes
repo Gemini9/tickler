@@ -1,0 +1,43 @@
+Html5 新的属性(Chrome显示)
+
+一：新增的input的类型
+1：email类型
+   <input type="email" /> 对于支持type="email"的浏览器来说，当输入了错误的邮件地址时，在提交时会有错误提示，对于不支持其
+   的浏览器来说，以type="text"的形式来处理。
+2：url类型
+   <input type="url" />同上
+3：number类型
+   <input type="number" max="31" min="1" step="2" value="1"/>
+   "max":规定允许的最大值，
+   "min":规定允许的最小值，
+   "step":规定合法的数字间隔，eg:如果step="2",则合法的数字只能是2的倍数，
+   "value":默认值
+4：range类型
+   <input type="range" max="31" min="1" step="2" value="1"/> 用于输入包含一定范围内的数字值的文本框，在网页中显示为滑动条
+   属性和number类型一致
+5：日期检出器类型(datepickers)
+   <input type="date" /> 会以 "年-月-日" 显示
+   <input type="month"/> 会以 "年-月" 显示
+   <input type="week" /> 用于选取周和年，如2012年8月32周，会以"2012-W32" 的形式显示
+   <input type="time" /> 会以 "时-分" 显示，具有和number类型同样的四种属性
+   <input type="datetime" /> 会以 "年-月-日 UTC时间" UTC时间---世界统一时间
+   <input type="datetime-local"/> 会以 "年-月-日 时-分"显示，时间是本地时间
+6：search类型
+   <input type="search" />目前大多数的网站的搜索框使用的是type="text"
+7：tel类型
+   <input type="tel" />
+8：color类型
+   <input type="color"/>可以快速的打开拾色器
+二：新增的input的属性
+1：autocomplete自动完成，某些浏览器可能需要启用浏览器本身的自动完成功能，
+   适用的input类型：text、search、url、tel、email、password、datepickers、range、color
+   该属性有三种值：on（启动） off（关闭） 空值
+2：autofocus自动获得焦点 属性值：autofocus on
+3：form属性:当提交数据的时候，除了表单内的元素还想要提交其他表单外的元素的时候，可以使用该属性
+   eg:
+   <form id="form1">
+    <input type="text"/>用户名
+    <button type="submit">提交</button>
+   </form>
+   <input type="text" form="form1"/>
+   form属性值可以是多个表单的id，用空格将各个表单的id分开
