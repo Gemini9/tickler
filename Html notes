@@ -42,3 +42,8 @@ Html5 新的属性(Chrome显示)
    <input type="text" form="form1"/>
    form属性值可以是多个表单的id，用空格将各个表单的id分开
 4：list属性：和datalist搭配使用
+5：pattern属性：用于验证input类型输入框中用户输入的内容是否与用户自定义的正则表达式相匹配
+   eg:<input type="text" name="zip_code" pattern="[0-9]{6}"/>
+三：新增的form属性
+1：autocomplete属性，规定form中所有元素都拥有自动完成的功能。
+2：novalidate属性，用于在提交表单时，取消整个表单的校验
