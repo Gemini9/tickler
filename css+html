@@ -1,0 +1,62 @@
+html:
+1：iframe标签：用于在网页内显示网页
+2：meta标签：提供关于html文档的元数据，元数据不会显示在页面上，但是对于机器是可读的，用于规
+   定页面的描述，关键词，文档的作者，最后修改时间以及其他元数据<meta>标签始终位于head元素中
+3：在html中不能使用大于号和小于号，浏览器会误认为它们是标签，如果想正确的显示，可以使用字符实体，eg:小于号：&lt或者是&#60
+   实体字符参考手册--http://www.w3school.com.cn/tags/html_ref_entities.html
+CSS:
+外部样式表：
+eg:
+<head>
+<link rel="stylesheet" type="text/css" href="xx.css">
+</head>
+内部样式表：
+eg:
+<head>
+  <style text="text/css">
+  body {
+  margin:0;
+  padding:0
+  }
+  </style>
+</head>
+内联样式：
+eg:
+<p style="color:red;">
+This is a paragraph
+</p>
+CSS背景属性：
+background:在一个声明中设置所有的背景属性
+background-attachment:设置背景图像是否固定，或者随着页面的其余部分滚动
+值：fixed--当页面其余部分滚动时，背景图像不会移动
+    scroll--默认值，可以移动
+    inherit--规定应该从父元素继承该属性的设置
+background-color:设置元素的背景颜色
+值：transparent--默认，背景颜色为透明
+    inherit--继承父元素
+    颜色名称：red
+    十六进制：#454878
+    rgb代码：rgb(255,0,0)
+background-image设置元素的背景图像
+background-position设置背景图像的开始位置
+值：top center(举例):默认值是0% 0%，如果只规定了一个关键词，那么第二个值将是center
+    x% y%:第一个值是水平位置，第二个值将是垂直位置
+    xpos ypos：第一个是水平位置，第二个是垂直位置，单位是像素或任何其他的css单位
+background-repeat:设置是否及如何重复背景图像
+值：repeat--默认，将在垂直方向和水平方向重复
+    repeat-x -- 背景图像将在水平方向上重复
+    repeat-y -- 背景图像将在垂直方向上重复
+    no-repeat -- 背景图像仅显示一次
+    inherit --继承父元素
+background-clip:规定背景的绘制区域
+值：border-box--背景被裁剪到边框盒
+    padding-box--背景被裁剪到内边框盒
+    content-box--背景被裁剪到内容框
+backgorund-origin规定背景图片的定位区域
+值：同上
+background-size规定背景图片的尺寸
+值：10px 10px(举例)--第一个值设置宽度，第二个值设置高度，如果只设置一个值，则第二个值会被设置为auto
+    10% 10%--同上
+    cover--把图像扩展到足够大，使背景图像完全覆盖背景区域
+    contain把图像扩展到最大尺寸，使其宽度和高度完全适应内容区域
+    
