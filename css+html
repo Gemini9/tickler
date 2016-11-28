@@ -59,4 +59,5 @@ background-size规定背景图片的尺寸
     10% 10%--同上
     cover--把图像扩展到足够大，使背景图像完全覆盖背景区域
     contain把图像扩展到最大尺寸，使其宽度和高度完全适应内容区域
-    
+
+border-width:不支持百分比值，支持关键字thin（1px） medium（默认值）(3px) thick(5px) 
