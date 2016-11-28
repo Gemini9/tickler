@@ -1,0 +1,6 @@
+数组元素升降序方法
+function sortNum(a,b) {
+   return b-a
+}
+var myarr = new Array("80","16","50","6","100","1");
+document.write(myarr.sort(sortNum));
